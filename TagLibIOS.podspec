@@ -26,5 +26,6 @@ Pod::Spec.new do |s|
     "OTHER_LDFLAGS" => "-ObjC -all_load -lz -lstdc++"
   }
 
-  s.source_files  = ["TagLibIOS/**/*.{h,c,cpp}"]
+  s.source_files  = ["TagLibIOS/**/*.{c,cpp"]
+  s.private_header_files  = ["TagLibIOS/**/*.{h,tcc}"]
 end
