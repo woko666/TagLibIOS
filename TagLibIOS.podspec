@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
 
   s.xcconfig = {
-    "SWIFT_INCLUDE_PATHS" => "$(PODS_ROOT)/TagLibIOS/taglib",
-    'USER_HEADER_SEARCH_PATHS' => "$(PODS_ROOT)/TagLibIOS/taglib/toolkit",
+    "SWIFT_INCLUDE_PATHS" => "$(PODS_ROOT)/TagLibIOS/TagLibIOS/taglib/toolkit",
+    'USER_HEADER_SEARCH_PATHS' => "$(PODS_ROOT)/TagLibIOS/TagLibIOS/taglib/toolkit",
     "ENABLE_BITCODE" => "YES",
     "OTHER_LDFLAGS" => "-ObjC -all_load -lz -lstdc++"
   }
