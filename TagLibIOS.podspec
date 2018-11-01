@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 
   s.xcconfig = {
     "SWIFT_INCLUDE_PATHS" => "$(PODS_ROOT)/TagLibIOS/TagLibIOS/taglib/toolkit",
-    'USER_HEADER_SEARCH_PATHS' => "$(PODS_ROOT)/TagLibIOS/TagLibIOS/taglib/toolkit",
+    'HEADER_SEARCH_PATHS' => "$(PODS_ROOT)/TagLibIOS/TagLibIOS/taglib/toolkit",
     "ENABLE_BITCODE" => "YES",
     "OTHER_LDFLAGS" => "-ObjC -all_load -lz -lstdc++"
   }
 
-  s.source_files  = ["TagLibIOS/taglib/**/*.{h,c,cpp,tcc}"]
+  s.source_files  = ["TagLibIOS/taglib/**/*.{h,c,cpp}"]
 end
