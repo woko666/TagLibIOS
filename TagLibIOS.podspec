@@ -28,4 +28,5 @@ Pod::Spec.new do |s|
 
   s.source_files  = ["TagLibIOS/**/*.{c,cpp"]
   s.private_header_files  = ["TagLibIOS/**/*.{h,tcc}"]
+  s.public_header_files  = ["TagLibIOS/TagLibIOS.h"]
 end
