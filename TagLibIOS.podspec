@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/woko666/TagLibIOS.git" }
 
   s.ios.deployment_target = '11.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.xcconfig = {
     "SWIFT_INCLUDE_PATHS" => "$(PODS_ROOT)/TagLibIOS/TagLibIOS/taglib/toolkit",
@@ -26,5 +26,5 @@ Pod::Spec.new do |s|
     "OTHER_LDFLAGS" => "-ObjC -all_load -lz -lstdc++"
   }
 
-  s.source_files  = ["TagLibIOS/**/*.{h,c,cpp,tcc}"]
+  s.source_files  = ["TagLibIOS/**/*.{h,c,cpp}"]
 end
